@@ -10,6 +10,6 @@ def main():
 
 	input_file.close()
 	ave = total_sum/count
-	print"There were a total of", str(count), "numbers"
-	print'The average of the numbers was', format(ave, '.2f')
+	print("There were a total of", str(count), "numbers")
+	print('The average of the numbers was', format(ave, '.2f'))
 main()
