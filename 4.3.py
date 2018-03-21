@@ -12,10 +12,11 @@ num_year = int(input("How many years do you want to track?"))
 num_month = 12
 total = 0
 for years in range(num_year):
-	for score in range(num_month):
-		current_rainfall = int(input("What is the average amount of rainfall?"))
+	print("_________ Year" + str(years + 1) + "________")
+	for month in range(num_month):
+		current_rainfall = int(input("How much rain did you get in a month " + str(month + 1) + ": "))
 		total += current_rainfall
 
 
-ave = total/num_month
+ave = total/(num_month * num_year)
 print("The average amount of rainfall is ", format(ave, ",.2f"))
